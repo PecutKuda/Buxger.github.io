@@ -625,7 +625,7 @@ li{
 }
 
   
-  @media screen and (max-width: 420px) and (min-width: 375px)
+  @media screen and (max-width: 450px) and (min-width: 375px)
   {
     .header
     {
@@ -809,7 +809,7 @@ li{
     }
   }
 
-  @media screen and (min-width: 500px)  and (max-width: 1000px) 
+  @media screen and (min-width: 451px)  and (max-width: 1000px) 
   { 
     .header
     {
