@@ -1,0 +1,180 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buxger💲</title>
+
+    <link rel="stylesheet" href="buxgerStyle.css">
+</head>
+
+<body>
+   <div class="header">
+        <div class="logo-box">
+            <a href="#tops"><img src="./asset/Logo-Buxger.png" alt="Buxger Logo"></a>
+        </div>
+        <div class="navlink">
+            <li><a href="#menus">Menus</a></li>
+            <li><a href="#reserve">Reservation</a></li>
+            <li><a href="#aboutus">About Us</a></li>
+        </div>
+    </div>
+    
+    <div id="tops" class="header-content">
+        <h1>"Quality is our Priority"</h1>
+        <p>Make sure to scroll down to see heaven</p>
+    </div>
+    <div id="menus" class="menu-box">
+        <div class="menu">
+            <div class="menu-row">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front-card1"></div>
+                        <div class="back-card1">
+                            <h1>Monstro Buxger</h1>
+                            <h2>9$</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front-card2"></div>
+                        <div class="back-card2">
+                            <h1>Zila Buxger</h1>
+                            <h2>8$</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front-card3"></div>
+                        <div class="back-card3">
+                            <h1>Croffle Bux</h1>
+                            <h2>
+                                4$
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu-row">
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front-card4"></div>
+                        <div class="back-card4">
+                            <h1>Hot Bux</h1>
+                            <h2>6$</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front-card5"></div>
+                        <div class="back-card5">
+                            <h1>Buxy Plater</h1>
+                            <h2>8$</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-container">
+                    <div class="card">
+                        <div class="front-card6"></div>
+                        <div class="back-card6">
+                            <h1>Fry da Bux</h1>
+                            <h2>
+                                4$
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Reservation Part -->
+        <div class="reserve-container" id="reserve">
+            <div class="reserve-box">
+                <h1>Reservation Page</h1>
+                <form action="" id = "form">
+                    <div class="form-group">
+                        <label for="">Full Name</label>
+                        <input type="text" name = "name" placeholder="Full Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input type="email" name = "email" placeholder="Buxger@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="">Additional Notes</label>
+                        <input type="text" name = "notes" placeholder="example: 5 People Reservation">
+                    </div>
+                    <div class="form-group" class = "custom-select">
+                        <label for="">Choose Area</label>
+                        <select name="planchoice" id = "">
+                            <option value="">Choose Area</option>
+                            <option value="Outside">Outside</option>
+                            <option value="Inside">Inside</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <input type="checkbox" name = "agreement" id="">
+                        <label for="">I agree with terms and condition</label>
+                    </div>
+
+                    <div id="error" class= "errormessage">
+                    </div>
+              
+                    <div class="bottombuttons">
+                        <input type="submit" value = "Submit" id = "submit">
+                        <input type="reset" value ="Reset" id = "reset">
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    <!-- About Us -->
+        <div class="about-us">
+                <div class="social-container">
+                    <div class="sos-box">
+                        <span></span>
+                        <div class="about-content" id="aboutus">
+                            <h2>Instagram Account</h2>
+                            <p>
+                                Hey this is our official instagram account!<br>
+                                make sure to follow!
+                            </p>
+                            <a href="https://www.instagram.com/elliot_lie/" target="_blank">Visit Our Instagram</a>
+                        </div>
+                    </div>
+                    <div class="sos-box">
+                        <span></span>
+                        <div class="about-content">
+                            <h2>Linked-in Account</h2>
+                            <p>
+                                Feel free to check out our official Linked-in account!<br>
+                            </p>
+                            <a href="https://www.linkedin.com/in/elliot-lie-75a0731b1" target="_blank">Visit Our Linked-in</a>
+                        </div>
+                    </div>
+                    <div class="sos-box">
+                        <span></span>
+                        <div class="about-content">
+                            <h2>Buxger Email</h2>
+                            <p>
+                                You can contact us via email by clicking on this button
+                            </p>
+                            <a href="mailto: eatbuxger@email.com" target="_blank">Email us</a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <div class="left-foot">
+                <p>© Buxger 2021 by PecutKuda as elliot_lie</p>
+            </div>
+        </div>
+        <!--  -->
+   <script src="buxger.js"></script>
+</body>
+</html>

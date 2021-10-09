@@ -1,0 +1,906 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+html
+{
+    scroll-behavior: smooth;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    width: 100%;
+    background-color: black;
+}
+.header
+{
+    display: flex;
+    width: 100%;
+    height: 100px;
+    background-color: rgba(3, 3, 3, 0.486);
+    position: fixed;
+    z-index: 2;
+}
+.logo-box
+{
+    position: relative;
+    bottom: -10%;
+    right: -5%;
+    width: fit-content;
+    height: fit-content;
+    padding: 7px;
+    border-radius: 20px;
+    justify-content: center;
+}
+.logo-box:hover
+{
+    transition: 0.3s ease-in;
+    transform: scale(1.1);
+}
+.logo-box>a>img
+{
+    width: 150px;
+    height: 60px;
+}
+li{
+    color: white;
+}
+.header>.navlink li a
+{
+    text-decoration: none;
+    font-style: bold;
+    color: rgb(212, 212, 11);
+    font-size: 20px;
+    padding: 20px;
+}
+.navlink li:hover
+{
+    color: rgb(58, 248, 10);
+    transition: 0.5s ease-in;
+}
+.navlink li a:hover
+{
+    color: rgb(58, 248, 10);
+}
+.navlink
+{
+    display: flex;
+    width: 80%;
+    height: 30px;
+    justify-content: space-evenly;
+    align-self: center;
+}
+.header-content
+{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient( rgba(0, 0, 0), rgba(0, 0, 0, 0.7)), url(./asset/crown.png);
+    background-size: cover;
+    border-radius: 70px;
+}
+.header-content h1
+{
+    font-style: bold;
+    font-size: 60px;
+    color: white;
+}
+.header-content p
+{
+    font-size: 20px;
+    color: white;
+}
+.menu-box
+{
+    margin-top: 190px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 800px;
+    background-color: black;
+    align-items: center;
+}
+.menu
+{
+    border-style:groove;
+    border-color: yellow;
+    width: 90%;
+    height: 80%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./asset/Buxger-restaurant.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menu-row
+{
+    margin-top: 70px;
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+/*CARD SECTION*/
+.card-container
+{
+    position: relative;
+    width: 260px;
+    height: 150px;
+}
+.card
+{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: 0.5s ease;
+}
+.card:hover
+{
+    transform: rotateY(180deg);
+}
+.back-card3 h2, .back-card1 h2, .back-card2 h2, .back-card4 h2, .back-card5 h2, .back-card6 h2
+{
+    color: rgb(47, 255, 47);
+    font-size: 25px;
+    font-style: bold;
+    text-align: center;
+}
+
+/*card 1*/
+.front-card1
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(./asset/Monstrous-bux.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    border: rgba(255, 166, 0, 0.5) 5px solid;
+}
+.back-card1
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)), url(./asset/Monstrous-bux.jfif);
+    background-repeat: no-repeat;
+    color: yellow;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    font-size: 15px;
+    font-style: bold;
+    text-align: center;
+    border: rgba(255, 166, 0, 0.5) 5px solid;
+}
+
+/*card2*/
+.front-card2
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(./asset/ZilaBuxger.jpeg);
+    background-size: cover;
+    border-radius: 20px;
+    background-size: cover;
+    border: rgba(255, 166, 0, 0.5) 5px solid;
+}
+.back-card2
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)), url(./asset/ZilaBuxger.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: yellow;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    font-size: 15px;
+    font-style: bold;
+    text-align: center;
+    border: rgba(255, 166, 0, 0.5) 5px solid;
+}
+
+/*card3*/
+.front-card3
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(./asset/Croffle-Bux.jfif);
+    background-size: cover;
+    border-radius: 20px;
+    background-size: cover;
+    border: rgba(255, 166, 0, 0.5) 5px solid;
+}
+.back-card3
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)), url(./asset/Croffle-Bux.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: yellow;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    font-size: 15px;
+    font-style: bold;
+    text-align: center;
+    border: rgba(255, 166, 0, 0.5) 5px solid;
+}
+/*card4*/
+.front-card4
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(./asset/HotBux.jfif);
+    border-radius: 20px;
+    background-size: cover;
+    border: rgba(255, 166, 0, 0.5) 5px solid;
+}
+.back-card4
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)), url(./asset/HotBux.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: yellow;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    font-size: 15px;
+    font-style: bold;
+    text-align: center;
+    border: rgba(255, 166, 0, 0.5) 5px solid;
+}
+
+/*card5*/
+.front-card5
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(./asset/Buxy-Plater.jfif);
+    background-size: cover;
+    border-radius: 20px;
+    background-size: cover;
+    border: rgba(255, 166, 0, 0.5) 5px solid;
+}
+.back-card5
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)), url(./asset/Buxy-Plater.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: yellow;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    font-size: 15px;
+    font-style: bold;
+    text-align: center;
+    border: rgba(255, 166, 0, 0.5) 5px solid;
+}
+
+
+/*card6*/
+.front-card6
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: url(./asset/Fry-theBux.jfif);
+    background-size: cover;
+    border-radius: 20px;
+    border: rgba(255, 166, 0, 0.5) 5px solid;
+}
+.back-card6
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgb(0, 0, 0)), url(./asset/Fry-theBux.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: yellow;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    font-size: 15px;
+    font-style: bold;
+    text-align: center;
+    border: rgba(255, 166, 0, 0.5) 5px solid;
+}
+.reserve-container{
+    margin-top: 150px;
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5em;
+  }
+  
+  .reserve-box
+  {
+    border: yellow 3px solid;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7)), url(./asset/grill.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2em 5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    animation: animate 2s ease-in-out infinite;
+  }
+  
+  .reserve-box h1{
+    color: yellow;
+  }
+  
+  label{
+    color: white;
+    padding-right: 0.2em;
+  }
+  
+  input[type = text]{
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 0.2em;
+    border-radius: 20px;
+  }
+  input[type = email]{
+    width: 100%;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border-radius: 0.2em;
+    border-radius: 20px;
+  }
+  .form-group{
+    padding-bottom: 1.5em;
+  }
+  
+  .bottombuttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  input[type = submit]{
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    margin-right: 0.8em;
+    color: yellow;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  input[type = reset]{
+    border-radius: 1em;
+    padding: 0.5em 1em;
+    margin-left: 0.2em;
+    color: yellow;
+    font-family: 'Poppins', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  input[type = reset]:hover, input[type = submit]:hover
+  {
+      background-color: rgba(255, 255, 0, 0.8);
+      color: black;
+      transition: 0.3s ease-in;
+      transform: scale(1.2);
+  }
+  .errormessage{
+    color: rgb(253, 119, 119);
+    text-align: center;
+    padding-bottom: 1em;
+    font-size: small;
+  }
+.about-us
+{
+    margin-top: 100px;
+    width: 100%;
+    height: fit-content;
+    margin-bottom: 200px;
+}
+.social-container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 40px 0;
+}
+.social-container .sos-box
+{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 30px;
+    transition: 0.5s;
+}
+.social-container .sos-box::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: white;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+}
+.social-container .sos-box::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50px;
+    width: 50%;
+    height: 100%;
+    background: white;
+    border-radius: 8px;
+    transform: skewX(15deg);
+    transition: 0.5s;
+    filter: blur(30px);
+    transition: 0.5s;
+}
+.social-container .sos-box:hover:before,
+.social-container .sos-box:hover:after
+{
+    transform: skewX(0deg);
+    left: 20px;
+    width: calc(100% - 90px);
+}
+.social-container .sos-box:nth-child(1):before,
+.social-container .sos-box:nth-child(1):after
+{
+    background: linear-gradient(315deg, #ffbc00, rgb(138, 6, 138));
+}
+.social-container .sos-box:nth-child(2):before,
+.social-container .sos-box:nth-child(2):after
+{
+    background: linear-gradient(315deg, #03a9f4, white);
+}
+.social-container .sos-box:nth-child(3):before,
+.social-container .sos-box:nth-child(3):after
+{
+    background: linear-gradient(315deg, #ff9900, #ff0015);
+}
+.social-container .sos-box span
+{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 50;
+    pointer-events: none;
+}
+.social-container .sos-box span::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    animation: animate 2s ease-in-out infinite;
+    transition: 0.5s;
+}
+.social-container .sos-box:hover span::before
+{
+    top: -50px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+
+.social-container .sos-box span::after
+{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    background: rgb(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    transition: 0.5s;
+    animation: animate 2s ease-in-out infinite;
+    animation-delay: -1s;
+}
+.social-container .sos-box:hover span::after
+{
+    bottom: -50px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    opacity: 1;
+}
+.social-container .sos-box .about-content
+{
+    left: 0;
+    padding: 20px 40px;
+    background: rgba(0, 0, 0, 0.05);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0 0.1);
+    border-radius: 8px;
+    backdrop-filter: blur(10px);
+    transition: 0.5s;
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+.social-container .sos-box:hover .about-content
+{
+    left: -25px;
+    padding: 60px 40px;
+}
+.social-container .sos-box .about-content h2
+{
+    font-size: 2em;
+    color: white;
+    margin-bottom: 10px;
+}
+.social-container .sos-box .about-content p
+{
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+.social-container .sos-box .about-content a
+{
+    display: inline-block;
+    font-size: 1.1em;
+    color: black;
+    background: white;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 5px;
+}
+.social-container .sos-box .about-content a:hover
+{
+    color: rgba(0, 0, 0, 0.8);
+    background: rgba(252, 252, 252, 0.411);
+    transition: 0.5s;
+}
+@keyframes animate
+{
+    0%, 100%
+    {
+        transform: translateY(10px);
+    }
+    50%
+    {
+        transform: translateY(-10px);
+    }
+}
+.footer
+{
+    width: 100%;
+    height: 60px;
+    background-color: rgba(255, 217, 0, 0.979);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+  
+  @media screen and (max-width: 420px) and (min-width: 375px)
+  {
+    .header
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 150px;
+        background-color: rgba(3, 3, 3, 0.486);
+        position: fixed;
+        justify-content: center;
+    }
+    .logo-box
+    {
+        position: relative;
+        top: -0.2em;
+        right: -6.5em;
+        width: fit-content;
+        height: fit-content;
+    }
+    .navlink
+    {
+        width: 100%;
+    }
+    .header>.navlink li a
+    {
+        text-decoration: none;
+        font-style: bold;
+        color: rgb(212, 212, 11);
+        font-size: 15px;
+        padding: 15px;
+    }
+    .navlink li
+    {
+        list-style: none;
+        border-radius: 15px;
+        background-color: rgba(128, 128, 128, 0.5);
+    }  
+    .header-content h1
+    {
+        font-style: bold;
+        font-size: 60px;
+        color: white;
+    }
+    .header-content p
+    {
+        font-size: 15px;
+        color: white;
+    }
+    .menu
+    {
+        border-style:groove;
+        border-color: yellow;
+        width: 95%;
+        height: 90%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./asset/Buxger-restaurant.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .menu-row
+    {
+        margin-top: 70px;
+        width: 95%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .card-container
+    {
+        position: relative;
+        width: 150px;
+        height: 170px;
+    }
+    .front-card1, .front-card2, .front-card3, .front-card4, .front-card5, .front-card6
+    {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .reserve-container
+    {
+        position: relative;
+        right: -6em;
+        width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 374.9px)
+  {
+    .header
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 150px;
+        background-color: rgba(3, 3, 3, 0.486);
+        position: fixed;
+        justify-content: center;
+    }
+    .logo-box
+    {
+        position: relative;
+        top: -0.2em;
+        right: -6.5em;
+        width: fit-content;
+        height: fit-content;
+    }
+    .navlink
+    {
+        width: 100%;
+    }
+    .header>.navlink li a
+    {
+        text-decoration: none;
+        font-style: bold;
+        color: rgb(212, 212, 11);
+        font-size: 15px;
+        padding: 15px;
+    }
+    .navlink li
+    {
+        list-style: none;
+        border-radius: 15px;
+        background-color: rgba(128, 128, 128, 0.5);
+    }  
+    .header-content h1
+    {
+        font-style: bold;
+        font-size: 60px;
+        color: white;
+    }
+    .header-content p
+    {
+        font-size: 15px;
+        color: white;
+    }
+    .menu
+    {
+        border-style:groove;
+        border-color: yellow;
+        width: 95%;
+        height: 90%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./asset/Buxger-restaurant.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .menu-row
+    {
+        margin-top: 70px;
+        width: 95%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .card-container
+    {
+        position: relative;
+        width: 130px;
+        height: 170px;
+    }
+    .front-card1, .front-card2, .front-card3, .front-card4, .front-card5, .front-card6
+    {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .reserve-container
+    {
+        position: relative;
+        right: -3.4em;
+        width: 70%;
+    }
+  }
+
+  @media screen and (min-width: 500px)  and (max-width: 1000px) 
+  { 
+    .header
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 150px;
+        background-color: rgba(3, 3, 3, 0.486);
+        position: fixed;
+        justify-content: center;
+    }
+    .logo-box
+    {
+        position: relative;
+        top: -0.3em;
+        left: -0.5em;
+        align-self: center;
+        width: fit-content;
+        height: fit-content;
+    }
+    .navlink
+    {
+        width: 100%;
+    }
+    .header>.navlink li a
+    {
+        text-decoration: none;
+        font-style: bold;
+        color: rgb(212, 212, 11);
+        font-size: 15px;
+        padding: 15px;
+    }
+    .navlink li
+    {
+        list-style: none;
+        border-radius: 15px;
+        background-color: rgba(128, 128, 128, 0.5);
+    }  
+    .header-content h1
+    {
+        font-style: bold;
+        font-size: 60px;
+        color: white;
+    }
+    .header-content p
+    {
+        font-size: 15px;
+        color: white;
+    }
+    .menu
+    {
+        border-style:groove;
+        border-color: yellow;
+        width: 95%;
+        height: 90%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(./asset/Buxger-restaurant.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 50px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .menu-row
+    {
+        margin-top: 40px;
+        width: 95%;
+        height: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .card-container
+    {
+        position: relative;
+        width: 200px;
+        height: 170px;
+    }
+    .front-card1, .front-card2, .front-card3, .front-card4, .front-card5, .front-card6
+    {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .reserve-container
+    {
+        position: relative;
+        right: -0.6em;
+        width: 95%;
+    }
+  }
+
+
+
